@@ -1,0 +1,357 @@
+/* ===========================
+   Global Styles (Resets)
+   =========================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+    background-color:white;
+}
+
+/* ===========================
+   Navbar Styles
+   =========================== */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Navbar Links (Login & Sign-up) */
+.identity, .identity a {
+    display: flex;
+    gap: 50px; 
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.identity a:hover {
+    background-color: lime;
+    font-size: xx-large;
+    transition: all 0.5s ease;
+}
+
+/* Navbar Background (Only for Home, About, Contact) */
+body:not(.loginpage):not(.signup-page) .navbar {
+    background-color: #0078d7; 
+}
+
+
+/* ===========================
+   Sidebar Styles
+   =========================== */
+.sidebar {
+    height: 100vh;
+    width: 100px;
+    background-color: #0078d7;
+    position: fixed;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: darkorange;
+    border-radius: 3px;
+    font-size: larger;
+    transition: all 0.5s ease;
+}
+
+/* ===========================
+   Background Image for Login Page
+   =========================== */
+.loginpage {
+    background-image: url('image/logo.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Login Form Box */
+.loginfo {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    margin: 100px auto;
+    background-color: lightblue;
+}
+
+.loginfo h1 {
+    color: darkblue;
+    padding-bottom: 10px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+/* ===========================
+   Background Image for Signup Page
+   =========================== */
+.signup-page {
+    background-image: url('image/logo.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Signup Form Box */
+.account {
+    padding: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: lightblue;
+    width: 700px;
+    margin: 50px auto;
+}
+
+.account h1 {
+    color: darkblue;
+    padding-bottom: 10px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+/* ===========================
+   Form Input Styles
+   =========================== */
+.info {
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.name {
+    padding-top: 5px;
+    gap: 20px;
+}
+
+/* ===========================
+   Images
+   =========================== */
+.images {
+    margin-top: 150px;
+    margin-left: 220px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/* ===========================
+   Index Page
+   =========================== */
+.images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.images img:hover {
+    transform: scale(1.5);
+}
+
+/* ===========================
+   About Page
+   =========================== */ 
+.about{
+    margin-left: 100px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+.about h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+.about h2{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    color: #666;
+}
+.about img{
+    width: 100px;
+}
+.about :hover{
+    font-size:xx-large;
+}
+
+.about img:hover{
+    width: 200px;
+}
+.skills{
+    padding: 20px;
+    background-color: lightcoral;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+}
+
+/* ===========================
+   Portfolio Page
+   =========================== */ 
+.portfolio {
+    margin: auto;
+    background-color: rgb(68, 233, 27);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 250px;
+}
+
+.portfolio h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.portfolio p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* ===========================
+   Content Page
+   =========================== */
+.content {
+    margin-left: 120px;
+}
+
+a {
+    color: #007BFF; 
+    text-decoration: none; 
+}
+/* ===========================
+   Contact Links 
+   =========================== */
+ .contact{
+    margin-top: 20px;
+    margin-left: 200px;
+ }
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    gap: 10px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.contact-links a img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-links a:hover {
+    background-color: rgb(1, 229, 96);
+    transform: scale(1.1);
+}   
+
+    /* ===========================
+       Content Page
+    =========================== */
+
+    .fixed-container {
+        height: auto;
+        width: 50px;
+        position: fixed;
+        background-color: darkgray;
+        /* border-radius: 15px; */
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        
+    }
+    
+    .social-icon img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+    
+    .social-icon:hover img {
+        transform: scale(1.5);
+    }
+    .search-bar{
+        text-align: center;
+        padding: 5px;
+    }
+    .search-bar input {
+        padding: 5px;
+        width: 200px;
+        font-size: 20px;
+    }
+    
+    .search-bar button {
+        cursor: pointer;
+        font-size: 20px;
+        padding: 1px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
