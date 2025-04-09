@@ -128,17 +128,34 @@ body:not(.loginpage):not(.signup-page) .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding-top:100px;  
 }
 .portfolio-box{
-
+    border: 2px solid white;
+    background-color: lightgreen;
+    width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    border-radius: 10px;
+    margin-left: 500px;
 }
-.photo{
-    height: 200px;
-    width: 200px;
-    object-fit:cover;
-
+.portfolio img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50px);
+    border: 5px solid orange;
 }
+    .something{
+        text-align: center;
+    }
+
+
 /* ===========================
    Contact Links 
    =========================== */
