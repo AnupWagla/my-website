@@ -12,7 +12,14 @@ body {
     background-color:rgb(0, 0, 0);
 }
 body.index-page {
-    background-image: url('image/star.jpeg  ');
+    background-image: url('image/star.jpeg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body.project-page {
+    background-image: url('image/star.jpeg');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -240,3 +247,7 @@ body:not(.loginpage):not(.signup-page) .navbar {
     /* ===========================
        Project Page
     =========================== */ 
+    .grid-item {
+        background-color: lime;
+        border: 5px solid yellow;
+    
